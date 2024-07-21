@@ -1,0 +1,156 @@
+body {
+  font-family: "inter", sans-serif;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+#productList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  border-radius: 12px;
+}
+
+.login-container,
+.logout-container,
+.cart-container {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container,
+.logout-container {
+  margin: 5rem auto;
+}
+
+header,
+.home-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+h2,
+h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.Products {
+  color: #ccc;
+  text-align: start;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+input[type="email"],
+input[type="password"],
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  cursor: pointer;
+  padding: 15px 40px;
+  border-radius: 12px;
+  border: 0;
+  transition: all 0.5s;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+
+.svg {
+  fill: #fff;
+  stroke: #333;
+  width: 32px;
+  transition: all 0.5s;
+}
+
+.svg:hover {
+  width: 32px;
+  fill: #ccc;
+}
+
+#cartList {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  display: flex;
+  gap: 20px;
+}
+
+.product,
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  background-color: blanchedalmond;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.product img,
+.cart-item img {
+  width: 100%;
+  border-radius: 12px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.productStaff {
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  h2,
+  h3 {
+    font-size: 28px;
+  }
+
+  .login-container,
+  .logout-container,
+  .cart-container {
+    margin: 10rem auto;
+  }
+}
+
+@media (min-width: 992px) {
+  header,
+  .home-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  h2,
+  h3 {
+    font-size: 32px;
+  }
+}
+
+.home-container {
+  flex-direction: column;
+}
